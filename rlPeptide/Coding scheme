@@ -1,0 +1,25 @@
+state : 
+	-length of peptide chain max 5
+	-sequence of amino acid used
+action:
+	-adding amino acid to the length if not reached max
+reward:
+	-checking the AP and logP values as the length increases and giving a reward of +1 for a 						 *limit to be decided* and above numeric reward output and -1 else.
+	
+	-(AnotherWay) can also use the reward defined in the paper (r = (Ap**alpha)*(lopP**beta)), maybe keep alpha and beta same as the paper for tri and penta peptide.
+	
+	-the limit can be the best score that was found using the monte carlo tree search. meaning the reward will be very strict and will only get a positive reward if we do better than the monte carlo tree search paper. QUITE A CHALLENGE!	
+	
+To find now: how is the environment defined? TO BE ANSWERED
+
+First attempt(FA): 
+I am trying to make the policy gradient model for tripeptides first.So, I am trying to make a model which does this: it will start with taking an amino acid, calculating the AP and logP values to get the reward, then adding another amino acid and calculating the reward, then a final amino acid and reward and then calculate the cumulative reward to optimize the weights of neural net, making this one episode. Thus, in theory there would be 8000 episodes, but I am assuming as the model learns (that is weights optimize), it will start to take better decision in choosing amino acid for adding in the chain. I can do a thing to add a limit i the reward, meaning as the model gets a sequence with the reward R as that limit, it will know it has done its best in choosing the amino acid, thus the model's learning part will be done and it will be used for making the tripeptides. 
+Although, this seems possible, I find it difficult to code, because I don't know HOW TO CALCULATE AP AND logP VALUES FOR A GROWING CHAIN.
+
+Observation Space for FA: 
+    -length of the current chain ( max limit 3)
+    -sequence of the current chain : how to define? as if I do an alphabetic chain (eg. AZY) it will be hard to train the model, but a numeric sequence will be harder as it has 20 action spaces, example, if the sequence is 1 2 13 it will not be able to distinguish whether 13 is thirteen or one&three. So, alphabetic method even hard, is the only feasible option to me.
+
+
+Steps I am taking @ 04/07/2023:
+ 1. making a policy network.
