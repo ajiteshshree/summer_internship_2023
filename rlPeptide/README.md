@@ -1,7 +1,7 @@
 ## Progress
 
 <ol>
-  <li>For the first task, I had to study and run the Monte Carlo Tree Search code for self assembling peptides, which I did.<a href = 'https://drive.google.com/file/d/1kmlz5kaJnC4FblE5oBK-0NnJRRSLm_pI/view?usp=drivesdk'>Paper</a>, <a href = 'https://zenodo.org/record/6564202'>Code </a></li>
+  <li>For the first task, I had to study and run the Monte Carlo Tree Search code for self assembling peptides, which I did.<a href = 'https://drive.google.com/file/d/1kmlz5kaJnC4FblE5oBK-0NnJRRSLm_pI/view?usp=drivesdk'> Paper</a>, <a href = 'https://zenodo.org/record/6564202'>Code </a></li>
   <li>Next, I started studying about Reinforcement Learning, to get a brief detail of the difference b/w RL and Supervised Learning by following <a href = "https://youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ">Google DeepMind's YouTube playlist</a>. In this playlist, I got the basic idea behind policies, actions, rewards, environment and observation spaces.</li>
   <li>After that, I started to learn about the RL's Policy Gradient Method, following the same playlist, getting an idea about the gradient ascent method.</li>
   <li>Next, I went to understand how to code the method, using observation spaces, actions, and rewards, by following the article coding the solution to OpenAI Gymnasium's <a href= "https://gymnasium.farama.org/environments/classic_control/cart_pole/">CartPole Problem</a>. <a href= "https://towardsdatascience.com/policy-gradient-methods-104c783251e0">Article</a></li>
