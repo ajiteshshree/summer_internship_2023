@@ -1,4 +1,4 @@
-# Summer Internship 2023
+# Summer Internship 2023-24
 
 The project's objective is to identify the optimal arrangement of 20 natural peptides within sequences of 3 or 5, facilitating seamless self-assembly for protein formation. To achieve this goal, a Reinforcement Learning model is trained through the creation of a customized environment using OpenAI's Gym library.
 
