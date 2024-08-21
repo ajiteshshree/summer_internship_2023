@@ -198,7 +198,7 @@ mean_reward, std_reward = evaluate_policy(model, env, n_eval_episodes=10, render
 
 ## Graphical Results:
 
-![Results](.\Extras\Graph.png)
+![Results](https://github.com/ajiteshshree/summer_internship_2023-24/blob/main/Extras/Graph.png)
 
 ### Inferences:
 - Average Episode Reward increases with the iterations.
